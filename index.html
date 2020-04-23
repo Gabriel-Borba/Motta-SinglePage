@@ -2,187 +2,120 @@
 <html lang="en">
 
 <head>
-  <script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-app.js"></script>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title>Motteira</title>
-  <!-- Font Awesome -->
-  <!-- Bootstrap core CSS -->
-  <link href="css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="css/main.css">
-  <!-- Your custom styles-->
-  <link href="css/style.min.css" rel="stylesheet">
-  <link href="css/fullPage.css" rel="stylesheet">
-  <!-- The core Firebase JS SDK is always required and must be listed first -->
-  <script src="js/jquery.min.js"></script>
-  <script src="js/jquery.scrolly.min.js"></script>
-  <script src="js/jquery.scrollex.min.js"></script>
-  <script src="js/skel.min.js"></script>
-  <script src="js/util.js"></script>
-  <script src="js/main.js"></script>
+    <!-- Title -->
+    <title>Motta</title>
 
-  <!-- JQuery -->
-  <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
-  <!-- Bootstrap tooltips -->
-  <script type="text/javascript" src="js/popper.min.js"></script>
-  <!-- Bootstrap core JavaScript -->
-  <script type="text/javascript" src="js/bootstrap.min.js"></script>
-  <!-- MDB core JavaScript -->
-  <script type="text/javascript" src="js/animations.js"></script>
+    <!-- Favicon -->
+    <link rel="icon" href="img/core-img/favicon.ico">
 
-  <!-- TODO: Add SDKs for Firebase products that you want to use
-       https://firebase.google.com/docs/web/setup#config-web-app -->
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
 
-  <script>
-    // Your web app's Firebase configuration
-    var firebaseConfig = {
-      apiKey: 'AIzaSyBwv0GojepG2oM0hy18E22Cbp01aJtrQ6A',
-      authDomain: 'portfoliomotta.firebaseapp.com',
-      databaseURL: 'https://portfoliomotta.firebaseio.com',
-      projectId: 'portfoliomotta',
-      storageBucket: 'portfoliomotta.appspot.com',
-      messagingSenderId: '519702026546',
-      appId: '1:519702026546:web:765cd88eef7b2aa8'
-    };
-    // Initialize Firebase
-    firebase.initializeApp(firebaseConfig);
-  </script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script>
-
-  </script>
 </head>
 <style>
-  @font-face {
-    font-family: 'barlow'; /*a name to be used later*/
-    src: url('font/barlow.ttf'); /*URL to font*/
-  }
+    .single-slide {
+        position: relative;
+        z-index: 99;
+        width: 100%;
+        height: 1080px;
+        overflow: hidden;
+    }
 
+    .teste {
+        text-align: center;
+        display: inline-block;
+    }
 
+    .footer-area {
+        position: relative;
+        z-index: 1;
+        padding-left: 35px;
+        padding-right: 35px;
+        background-color: black;
+    }
 
-  iframe{
-      width: 1920px;
-      height: 1080px;
-  }
-  html {
-    scroll-behavior: smooth;
-  }
-  .navbar
-  {
-    background-color: transparent;
-  }
-  a{
-    color: white;
-    text-decoration: none;
-    font-family:barlow ;
-  }
+    .mb-100 {
+        margin-bottom: 10px;
+    }
 </style>
 
-
 <body>
+    <!-- Preloader -->
+    <div class="preloader d-flex align-items-center justify-content-center">
+        <div class="lds-ellipsis">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
 
-<!-- Navigation -->
-<nav class="navbar navbar-expand-sm bg-transparent transparent navbar-inverse fixed-top">
-  <div class="d-flex flex-grow-1">
-    <a class=" navbar-brand d-none d-lg-inline-block" href="#">
-      <img src="images/Marca.png" alt="logo">
-    </a>
-  </div>
-  <div class="collapse navbar-collapse flex-grow-1 text-right" id="myNavbar">
-    <ul class="navbar-nav ml-auto flex-nowrap">
-      <li class="nav-item">
-        <a href="#one3" class=" menu-item nav-active">Projects</a>
-      </li>
-      &nbsp;&nbsp;
-      <li class="nav-item">
-        <a href="#seven">About me</a>
-      </li>
-    </ul>
-  </div>
-</nav>
+    <!-- ##### Header Area Start ##### -->
 
-<section id="banner" class="bg-img" data-bg="inicial.png">
-  <div class="inner  inner-scratch">
-    <header>
-    </header>
+    <!-- ##### Header Area End ##### -->
 
-  </div>
-</section>
+    <!-- ##### Hero Area Start ##### -->
+    <section class="hero-area">
+        <div class="hero-slideshow owl-carousel">
+            <!-- Single Slide -->
+            <div class="single-slide">
+                <!-- Background Image-->
+                <div class="slide-bg-img bg-img" style="background-image: url(img/bg-img/HOME_ANIMADO.gif);"></div>
+                <!-- Welcome Text -->
+                <div class="container h-100">
+                    <div class="row h-100 align-items-center">
 
-<section id="one3" class="wrapper post bg-img" data-bg="seusFilhos.png">
-  <div class="inner">
-  </div>
-</section>
+                    </div>
+                 </div>
+            </div>
+        </div>
+    </section>
+    <!-- ##### Hero Area End ##### -->
 
-<section id="one2" class="wrapper post bg-img" data-bg="infoFilhos1.gif">
-  <div class="inner">
-  </div>
-</section>
+    <!-- ##### Top Catagory Area Start ##### -->
+    <div class="top-catagory-area d-flex flex-wrap">
+        <!-- Single Catagory -->
+        <div class="single-catagory bg-img d-flex align-items-center justify-content-center jarallax"
+            style="background-image: url(img/bg-img/gif_selva.gif);">
 
+        </div>
+        <!-- Single Catagory -->
+        <div class="single-catagory bg-img d-flex align-items-center justify-content-center jarallax"
+            style="background-image: url(img/bg-img/rebirth_capa.gif);">
+        </div>
+    </div>
 
-<section id="one6" class="wrapper post bg-img" data-bg="seusFilhosInfo.png">
-  <div class="inner">
-  </div>
-</section>
+    <footer class="footer-area section-padding-100-0">
+        <div class="container single-footer-widget mb-100">
+            <hr />
+            <div class="footer-social-info text-center center-block">
+                <br />
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-instagram"></i></a>
+                <a href="#"><i class="fa fa-linkedin"></i></a>
+            </div>
+            <hr />
+        </div>
+    </footer>
+    <!-- ##### Footer Area Start ##### -->
 
-<section id="one5" class="wrapper post bg-img" data-bg="seusFilhosInfo2.png">
-  <div class="inner">
-  </div>
-</section>
-
-
-<section id="one4" class="" data-bg="seusFilhos.png">
-  <iframe src="https://player.vimeo.com/video/246017791" class="embed-responsive frame-inside"
-          webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-</section>
-
-<section id="two" class="wrapper post bg-img" data-bg="selvaDePedra.png">
-  <div class="inner">
-  </div>
-</section>
-
-<section id="six1"  class="" data-bg="seusFilhos.png">
-  <iframe src="https://player.vimeo.com/video/274929719" class="embed-responsive frame-inside"
-          webkitallowfullscreen
-          mozallowfullscreen allowfullscreen></iframe>
-</section>
-<section id="three" class="wrapper post bg-img" data-bg="rebirth.png">
-  <div class="inner">
-  </div>
-</section>
-<section id="six2"  class="" data-bg="seusFilhos.png">
-  <iframe src="https://player.vimeo.com/video/330400628" class="embed-responsive frame-inside"
-          webkitallowfullscreen
-          mozallowfullscreen allowfullscreen></iframe>
-</section>
-
-<section id="six" class="wrapper post bg-img" data-bg="meiaInfo.png">
-  <div class="inner">
-  </div>
-</section>
-<section id="six4" class="wrapper post bg-img" data-bg="infoMeia.png">
-  <div class="inner">
-  </div>
-</section>
-
-<section id="seven" class="wrapper post bg-img" data-bg="About.png">
-  <div class="inner">
-  </div>
-</section>
-</div>
-</div>
+    <!-- ##### All Javascript Script ##### -->
+    <!-- jQuery-2.2.4 js -->
+    <script src="js/jquery/jquery-2.2.4.min.js"></script>
+    <!-- Popper js -->
+    <script src="js/bootstrap/popper.min.js"></script>
+    <!-- Bootstrap js -->
+    <script src="js/bootstrap/bootstrap.min.js"></script>
+    <!-- All Plugins js -->
+    <script src="js/plugins/plugins.js"></script>
+    <!-- Active js -->
+    <script src="js/active.js"></script>
 </body>
-
-<!--/.Footer-->
-
-<!-- SCRIPTS -->
-
-<!-- Scripts -->
-
-
-</body>
-
 
 </html>
